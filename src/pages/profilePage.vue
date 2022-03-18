@@ -40,17 +40,17 @@
 import { QSpinnerCube } from "quasar";
 export default {
   async created() {
-    this.$q.loading.show({
-      message: "Loading",
-      spinnerColor: "primary",
-      spinner: QSpinnerCube,
-    });
+    // this.$q.loading.show({
+    //   message: "Loading",
+    //   spinnerColor: "primary",
+    //   spinner: QSpinnerCube,
+    // });
     let url = `http://localhost:8888/people/`;
     const people = await this.$axios.get(url);
     //this.$q.loading.hide();
-    setTimeout(() => {
-      this.$q.loading.hide();
-    }, 400);
+    // setTimeout(() => {
+    //   this.$q.loading.hide();
+    // }, 400);
     if (this.$route.params.id == 1) {
       this.people = people.data[0];
     }
