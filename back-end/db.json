@@ -1,0 +1,37 @@
+{
+  "people": [
+    {
+      "name": "Benoit Trouve",
+      "nickname": "Le Créateur",
+      "age": 22,
+      "img": "images/Benoit.JPG",
+      "occupation": "Le fondateur de Midipile Mobility",
+      "birthday": "25/10/1983",
+      "address": "70 rue Jean Doucet",
+      "city": "Angouleme",
+      "postal_code": "16000"
+    },
+    {
+      "name": "Celian Lecomte",
+      "nickname": "Le Sage",
+      "age": 25,
+      "img": "images/Celian.JPG",
+      "occupation": "Associé - Ingénieur mécatronique",
+      "birthday": "25/10/1996",
+      "address": "70 rue Jean Doucet",
+      "city": "Angouleme",
+      "postal_code": "16000"
+    },
+    {
+      "name": "Guillaume Talercio",
+      "nickname": "L'Architecte",
+      "age": 35,
+      "img": "images/Guillaume.JPG",
+      "occupation": "Associé - Ingénieur ENSHMG|ENSPM motoriste",
+      "birthday": "13/06/1983",
+      "address": "70 rue Jean Doucet",
+      "city": "Angouleme",
+      "postal_code": "16000"
+    }
+  ]
+}
