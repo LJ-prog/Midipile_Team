@@ -32,7 +32,12 @@
         <q-route-tab
           :to="{ name: 'profile', params: { id: 3 } }"
           replace
-          label="Guillaume Talercio"
+          label="Search"
+        />
+        <q-route-tab
+          :to="{ name: 'profile', params: { id: 4 } }"
+          replace
+          label="RANDOM"
         />
       </q-tabs>
     </q-header>
@@ -75,7 +80,7 @@ export default {
   },
   methods: {
     goToHome() {
-      this.$router.push("/home");
+      this.$router.push("/");
     },
   },
 };

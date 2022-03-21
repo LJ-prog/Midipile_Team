@@ -40,25 +40,27 @@
 import { QSpinnerCube } from "quasar";
 export default {
   async created() {
-    // this.$q.loading.show({
-    //   message: "Loading",
-    //   spinnerColor: "primary",
-    //   spinner: QSpinnerCube,
-    // });
+    this.$q.loading.show({
+      message: "Loading",
+      spinnerColor: "primary",
+      spinner: QSpinnerCube,
+    });
     let url = `http://localhost:8888/people/`;
-    const people = await this.$axios.get(url);
+    const people = await this.$axios.get(url); // relier const au fichier json.
     //this.$q.loading.hide();
-    // setTimeout(() => {
-    //   this.$q.loading.hide();
-    // }, 400);
+    setTimeout(() => {
+      this.$q.loading.hide();
+    }, 400);
     if (this.$route.params.id == 1) {
       this.people = people.data[0];
     }
     if (this.$route.params.id == 2) {
       this.people = people.data[1];
     }
-    if (this.$route.params.id == 3) {
-      this.people = people.data[2];
+    // if (this.$route.params.id == 4) {
+    //   this.people = people.data[2];
+    // }
+    if (this.$route.params.id == 4) {
     }
     console.log(people.data);
     // console.log(character.data);
